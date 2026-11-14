@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="46" fill="#0b0d12"/>
+  <!-- YouTube -->
+  <rect x="14" y="14" width="228" height="112" rx="26" fill="#ff0033"/>
+  <polygon points="104,42 104,98 154,70" fill="#fff"/>
+  <!-- Twitch -->
+  <rect x="14" y="134" width="110" height="108" rx="24" fill="#9146ff"/>
+  <polygon points="46,154 102,154 102,194 84,212 70,212 58,224 58,212 40,212 40,166" fill="#fff"/>
+  <rect x="62" y="170" width="9" height="23" fill="#9146ff"/>
+  <rect x="81" y="170" width="9" height="23" fill="#9146ff"/>
+  <!-- Kick -->
+  <rect x="132" y="134" width="110" height="108" rx="24" fill="#53fc18"/>
+  <polygon points="158,158 178,158 178,176 188,176 188,166 198,166 198,158 218,158 218,174 208,174 208,182 198,182 198,194 208,194 208,202 218,202 218,218 198,218 198,210 188,210 188,200 178,200 178,218 158,218" fill="#0b0d12"/>
+</svg>

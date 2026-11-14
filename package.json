@@ -1,0 +1,14 @@
+{
+  "name": "multiwatch",
+  "productName": "Multiwatch",
+  "version": "1.0.0",
+  "description": "Free-form multi-stream viewer for YouTube, Twitch and Kick",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}

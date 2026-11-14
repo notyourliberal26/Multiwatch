@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <title>Multiwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="topbar">
+    <button id="toggle-library" class="icon-btn" title="Show or hide the library">☰</button>
+    <div class="brand">Multiwatch</div>
+    <form id="add-form">
+      <input id="add-input" type="text" spellcheck="false" autocomplete="off"
+             placeholder="Paste a YouTube, Twitch or Kick link, then press Enter">
+      <button type="submit" class="primary">Add stream</button>
+    </form>
+    <div class="spacer"></div>
+    <button id="mute-all" title="Mute every stream">Mute all</button>
+    <span class="divider"></span>
+    <button id="grid" title="Arrange all streams in an even grid">Grid</button>
+    <button id="spotlight" title="Make the last-clicked stream large, with the others beside it">Spotlight</button>
+    <button id="snap" class="toggle" title="Snap windows to edges and each other. Hold Alt while dragging to ignore.">Snap</button>
+    <div class="popover-wrap">
+      <button id="layouts-btn" title="Save and recall arrangements">Layouts ▾</button>
+      <div id="layouts-pop" class="popover" hidden>
+        <form id="layout-form">
+          <input id="layout-name" type="text" placeholder="Name this layout" maxlength="40" autocomplete="off">
+          <button type="submit">Save</button>
+        </form>
+        <ul id="layout-list"></ul>
+      </div>
+    </div>
+    <span class="divider"></span>
+    <button data-board="streamers" title="Open the Streamers window: Destiny, Hutch and LonerBox">Streamers</button>
+    <button data-board="news" title="Open the News Live window: CNN, Fox News and MS NOW">News live</button>
+    <button id="instagram" title="Open the Instagram window: Aaron Parnas, plus any accounts you add">Instagram</button>
+    <button id="news-desks" title="Open the News Desks window: AP, NYT, Decision Desk HQ and Fox side by side">News desks</button>
+    <button id="fullscreen" class="icon-btn" title="Fullscreen">⛶</button>
+  </header>
+
+  <div id="body">
+    <aside id="library">
+      <h2>Library</h2>
+      <p class="hint">Drag onto the canvas, or double-click.</p>
+      <ul id="library-list"></ul>
+    </aside>
+    <main id="canvas">
+      <div id="empty">
+        <strong>No streams open</strong>
+        <span>Drag one in from the library, paste a link above, or drop a link from your browser.</span>
+      </div>
+      <div id="drop-shield"></div>
+    </main>
+  </div>
+  <div id="toast" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>

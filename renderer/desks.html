@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <title>News Desks</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="desks.css">
+</head>
+<body>
+  <header id="topbar">
+    <div class="brand" id="brand">News Desks</div>
+    <span class="hint-top" id="hint">Their own pages, live. Sound is off until you turn it on.</span>
+    <form id="add-form" hidden>
+      <input id="add-input" type="text" spellcheck="false" autocomplete="off" placeholder="@account or instagram.com link">
+      <button type="submit" class="primary">Add</button>
+    </form>
+    <div class="spacer"></div>
+    <div class="seg" id="layout">
+      <button data-v="grid" title="All at once in a grid">Grid</button>
+      <button data-v="cols" title="Side by side, full height">Columns</button>
+    </div>
+    <button id="reload-all" title="Reload every page">Reload all</button>
+    <button id="reset" title="Put back the original pages">Reset pages</button>
+    <button id="fullscreen" class="icon-btn" title="Fullscreen">⛶</button>
+  </header>
+  <main id="desks"></main>
+  <script src="desks.js"></script>
+</body>
+</html>
